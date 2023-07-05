@@ -1,0 +1,9 @@
+---
+- name: check if file exists
+  hosts: all
+  tasks:
+  - name: ensure directory exist
+    file:
+      path: /home/vinodh/ansible
+      state: directory
+
